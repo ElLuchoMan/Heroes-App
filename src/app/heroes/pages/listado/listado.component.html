@@ -1,1 +1,11 @@
-<p>listado works!</p>
+<h1>Listado de heroes</h1>
+<mat-divider></mat-divider>
+<ul>
+    <mat-card *ngFor="let heroe of heroes">
+        <mat-card-header>
+       <mat-card-title>{{heroe.superhero}}</mat-card-title> 
+       <mat-card-subtitle>{{heroe.alter_ego}}</mat-card-subtitle>
+    </mat-card-header>
+    <img src="assets/heroes/{{heroe.id}}.jpg">
+    </mat-card>
+</ul>
