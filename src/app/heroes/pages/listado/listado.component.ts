@@ -7,12 +7,12 @@ import { Heroe } from '../../interfaces/hereoes.interface';
   templateUrl: './listado.component.html',
   styles: [`mat-card{ margin-top:20px}`]
 })
+
 export class ListadoComponent implements OnInit {
-heroes:Heroe[]=[]
+  heroes: Heroe[] = []
   constructor(private heroesService: HeroesService) { }
 
   ngOnInit(): void {
-  this.heroesService.getHeroes().subscribe(heroes=>{return this.heroes= heroes});
+    this.heroesService.getHeroes().subscribe(heroes => { return this.heroes = heroes });
   }
-
 }
