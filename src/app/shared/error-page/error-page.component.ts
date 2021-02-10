@@ -12,5 +12,4 @@ export class ErrorPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
