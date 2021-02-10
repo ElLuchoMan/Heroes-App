@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Heroe } from '../../interfaces/hereoes.interface';
 
 @Component({
   selector: 'app-buscar',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class BuscarComponent implements OnInit {
-
+termino:string="";
+heroes: Heroe[]=[];
   constructor() { }
 
   ngOnInit(): void {
