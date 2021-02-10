@@ -1,1 +1,58 @@
-<p>heroe works!</p>
+<mat-grid-list cols=1 *ngIf="!heroe; else divHeroe">
+    <mat-grid-tile>
+        <mat-spinner>
+        </mat-spinner>
+    </mat-grid-tile>
+</mat-grid-list>
+<ng-template #divHeroe>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
+        <div fxFlex="50">
+            <h1>{{heroe.superhero}}<small>- {{heroe.alter_ego}}</small></h1>
+            <mat-divider></mat-divider>
+            <br>
+            <img [src]="heroe | imagen">
+        </div>
+        <div fxFlex="50">
+            <h1>{{heroe.publisher}}</h1>
+            <mat-divider></mat-divider>
+            <br>
+            <mat-accordion>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <h2> Héroe</h2>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <h3>{{heroe.superhero}}</h3>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <h2>Álter Ego</h2>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <h3>{{heroe.alter_ego}}</h3>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <h2>Creador</h2>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <h3>{{heroe.publisher}}</h3>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <h2> Primera Aparición</h2>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <h3>{{heroe.first_appearance}}</h3>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <br>
+            <button mat-button color="warn" (click)="regresar()"> Regresar </button>
+        </div>
+
+    </div>
+</ng-template>

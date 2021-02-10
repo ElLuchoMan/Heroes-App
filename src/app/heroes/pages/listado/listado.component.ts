@@ -5,7 +5,7 @@ import { Heroe } from '../../interfaces/hereoes.interface';
 @Component({
   selector: 'app-listado',
   templateUrl: './listado.component.html',
-  styles: [`mat-card{ margin-top:20px}`]
+  styles: []
 })
 
 export class ListadoComponent implements OnInit {
