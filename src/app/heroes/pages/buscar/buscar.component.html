@@ -6,7 +6,7 @@
 
     <div fxLayout="column">
         <h3>Buscador</h3>
-        <mat-form-field>
+        <mat-form-field  appearance="outline">
             <input type="text" placeholder="Buscar Heroe" aria-label="Buscar Heroe" matInput [(ngModel)]="termino"
                 [matAutocomplete]="auto" (input)="buscando()">
             <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete"
