@@ -36,10 +36,10 @@
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>
-                            <h2>Creador</h2>
+                            <h2> Personajes</h2>
                         </mat-panel-title>
                     </mat-expansion-panel-header>
-                    <h3>{{heroe.publisher}}</h3>
+                    <h3>{{heroe.characters}}</h3>
                 </mat-expansion-panel>
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
@@ -49,6 +49,15 @@
                     </mat-expansion-panel-header>
                     <h3>{{heroe.first_appearance}}</h3>
                 </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <h2>Creador</h2>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <h3>{{heroe.publisher}}</h3>
+                </mat-expansion-panel>
+               
             </mat-accordion>
             <br>
             <button mat-button color="warn" (click)="regresar()"> Regresar </button>
