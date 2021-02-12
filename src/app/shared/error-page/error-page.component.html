@@ -1,11 +1,6 @@
-<ul>
-    <li>
-        <a routerLink="/auth/login"> Login</a>
-    </li>
-    <li>
-        <a routerLink="/auth/registro"> Registro</a>
-    </li>
-    <li>
-        <a routerLink="/heroes/listado">Listado</a>
-    </li>
-</ul>
+
+<mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile> <button mat-raised-button color="primary" routerLink="/auth/login"> Login</button></mat-grid-tile>
+    <mat-grid-tile><button mat-raised-button color="primary" routerLink="/heroes/listado">Listado</button></mat-grid-tile>
+    <mat-grid-tile><button mat-raised-button color="primary" routerLink="/auth/registro"> Registro</button></mat-grid-tile>
+</mat-grid-list>

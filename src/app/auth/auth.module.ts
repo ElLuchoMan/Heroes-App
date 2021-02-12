@@ -4,6 +4,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { AuthRoutingModule } from './auth-routing.module';
 import { MaterialModule } from '../material/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -15,7 +16,8 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     AuthRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule,
   ]
 })
 export class AuthModule { }

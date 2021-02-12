@@ -1,7 +1,31 @@
-<mat-grid-list cols="1">
-    <mat-grid-tile>
-        <button mat-raised-button color="primary" (click)="login()">
-            Ingresar
-        </button>
-    </mat-grid-tile>
-</mat-grid-list>
+<div class="container" fxLayout="row" fxLayoutGap="40px" fxLayout.xs="column">
+    <div fxFlex="50" fxLayout="column">
+        <div fxLayout="row" fxLayout.xs="row" fxLayoutGap="20px">
+            <h1>Con esta App podrás:</h1>
+        </div>
+        <mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile>
+                <h2>Crear Héroes</h2>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <h2>Buscar Héroes</h2>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <h2>Editar Héroes</h2>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <h2>Eliminar Héroes</h2>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-divider></mat-divider>
+        <div fxLayout="column">
+            <button mat-raised-button color="primary" (click)="login()">
+                Ingresar
+            </button>
+        </div>
+    </div>
+    <div fxFlex="50">
+        <img
+            src="http://images6.fanpop.com/image/photos/41400000/Banner-Marvel-VS-DC-marvel-comics-vs-dc-comics-41414325-1280-932.jpg">
+    </div>
+</div>

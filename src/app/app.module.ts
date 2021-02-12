@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { MaterialModule } from './material/material.module';
 
 
 
@@ -20,6 +21,7 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MaterialModule,
 
   ],
   providers: [],
